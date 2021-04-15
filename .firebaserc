@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chat-react-491db": {
+      "hosting": {
+        "chat-angular": [
+          "chat-react-491db"
+        ]
+      }
+    }
+  }
+}
