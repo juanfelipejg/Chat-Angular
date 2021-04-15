@@ -43,4 +43,16 @@ export class ChatroomComponent  {
 
   }
 
+  /*input:any = document.getElementById("input_message").addEventListener("keyup", function(event){
+    if(event.keyCode == 13){
+      document.getElementById("btnSend").click();
+    }
+  })*/
+
 }
+
+  
+
+  
+
+

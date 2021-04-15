@@ -1,11 +1,10 @@
 <div className="App">
   <header>
-    <h1>Pipe's Chat</h1>
-    <div *ngIf="user !== null" >
-      <button (click)="signOut()">
-        Sign out [{{user?.email}}]
-      </button>
-    </div>
+      <h1>Pipe's Chat</h1>
+      <div  *ngIf="user !== null" >
+        <button class="button_signOut" (click)="signOut()">
+        </button>
+      </div>
   </header>
 
   <section *ngIf="user !== null">
@@ -15,9 +14,12 @@
     
   </section>
 
-  <section *ngIf="user === null">
-    <button (click)="signIn()">
-     Sign In
-    </button>
-  </section>
+  <div class="start">
+    <section *ngIf="user === null">
+      <button class ="button_signIn"(click)="signIn()">
+        Sign In
+      </button>
+    </section>
+  </div>
+
 </div>
