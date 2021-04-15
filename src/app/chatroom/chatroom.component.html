@@ -1,10 +1,15 @@
 <ul>
     <li *ngFor="let item of items | async">
-
-        <img src="{{ item.photoURL }}" alt="avatar">
-        {{ item.displayName }}
-        {{ item.text }}
+        <article class="container_article">
+            <div class="name">
+            <img src="{{ item.photoURL }}" alt="avatar">            
+            <p>{{ item.displayName }}</p> 
+            </div>
+            <div class="text">
+                {{ item.text }}
+            </div> 
+        </article>
     </li>
 </ul>
 <input type="text" placeholder="Ingresar algo aqui" [(ngModel)]="formValue" />
-<button (click)="sendMessage()" [disabled]="!formValue">Send</button>
+<button class="button_send" (click)="sendMessage()" [disabled]="!formValue"></button>

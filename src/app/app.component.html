@@ -1,6 +1,6 @@
 <div className="App">
   <header>
-    <h1>Sofka Chat</h1>
+    <h1>Pipe's Chat</h1>
     <div *ngIf="user !== null" >
       <button (click)="signOut()">
         Sign out [{{user?.email}}]
@@ -9,7 +9,10 @@
   </header>
 
   <section *ngIf="user !== null">
-    <app-chatroom></app-chatroom>
+    <div class="container">
+      <app-chatroom></app-chatroom>
+    </div>
+    
   </section>
 
   <section *ngIf="user === null">
