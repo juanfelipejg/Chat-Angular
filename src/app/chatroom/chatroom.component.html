@@ -11,7 +11,7 @@
         </article>
     </li>
 </ul>
-<div class = "send_message">
+<div (keyup.enter)="sendMessage()" class = "send_message">
 <input type="text" id="input_message" placeholder="Ingresar algo aqui" [(ngModel)]="formValue" />
-<button class="button_send" id="btnSend" type="onsubmit" (click)="sendMessage()" [disabled]="!formValue"></button>
+<button class="button_send" id="btnSend" (click)="sendMessage()" [disabled]="!formValue"></button>
 </div>
